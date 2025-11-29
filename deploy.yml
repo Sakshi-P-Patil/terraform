@@ -1,0 +1,15 @@
+---
+- hosts: webserver
+  become: yes
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install dependencies
+      apt:
+        name:
+          - git
+          - docker.io
+          - openjdk-11-jdk
+        state: present
