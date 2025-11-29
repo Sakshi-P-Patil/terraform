@@ -6,7 +6,7 @@ provider "aws" {
 # SECURITY GROUP
 # ================================
 resource "aws_security_group" "my_sg" {
-  name = "my-ec2-sg34"
+  name = "my-ec2-sg344"
 
   ingress {
     description = "Allow SSH only from your IP"
